@@ -1,0 +1,223 @@
+.platnosci {
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px 10px; 
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Lewa Prawa"
+    "lewa1 prawa1";
+    justify-items: center; 
+}
+  
+.Lewa {
+    display: grid;
+    gap: 1% 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "description"
+    "na_obcy"
+    "na_wlasny"
+    "z_innego_banku";
+    grid-area: Lewa;
+}
+  
+.na_obcy {
+    grid-area: na_obcy;
+}
+  
+.na_wlasny {
+    grid-area: na_wlasny;
+}
+  
+.z_innego_banku {
+    grid-area: z_innego_banku;
+}
+  
+.Prawa {
+    display: grid;
+    gap: 1% 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "description"
+    "blik"
+    "na_wlasny_walutowy"
+    ".";
+    grid-area: Prawa;
+}
+  
+.blik {
+    grid-area: blik;
+}
+  
+.na_wlasny_walutowy {
+    grid-area: na_wlasny_walutowy;
+}
+  
+.prawa1 {
+    display: grid;
+    gap: 1% 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "description"
+    "skanuj_plac"
+    "doladuj_telefon";
+    grid-area: prawa1;
+}
+  
+.skanuj_plac {
+    grid-area: skanuj_plac;
+}
+  
+.doladuj_telefon {
+    grid-area: doladuj_telefon;
+}
+  
+.lewa1 {
+    display: grid;
+    gap: 1% 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "description"
+    "transakcje_blik"
+    "przelewy";
+    grid-area: lewa1;
+}
+
+.transakcje_blik {
+    grid-area: transakcje_blik;
+}
+  
+.przelewy {
+    grid-area: przelewy;
+}
+
+#kafelek {
+    width: 600px;
+    padding: 20px 10px 20px 10px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #ffff;
+    margin: 10px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 6px,
+                rgba(255, 255, 255) -3px -3px 6px 6px;
+    float: left;
+    transition: 0.6s;
+}
+#kafelek:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: rgb(176, 179, 180) 3px 3px 6px 6px,
+                rgb(199, 196, 196) -3px -3px 6px 6px;
+}
+.description {
+    grid-area: description;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    height: 5%;
+}
+.platnosci .fa-solid {
+    color: #ea1538;
+    height: 80px;
+    background: none;
+    float: left;
+}
+.text {
+    float: left;
+    margin-left:20px;
+    background: none;
+    margin-top: -10px;
+    padding: 0;
+}
+.platnosci a {
+    float: right;
+    margin-right: 20px;
+    background: none;
+}
+#na_obcy_pop {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+    width: 50%;
+    height: 70%;
+    background: #ea1538;
+    padding: 20px;
+    z-index: 100;
+    
+}
+#na_obcy_pop, #na_wlasny_pop, #z_innego_banku_pop, #blik_pop, #na_wlasny_walutowy_pop, #skanuj_plac_pop, #doladuj_telefon_pop, #transakcje_blik_pop, #przelewy_pop {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height:70%;
+    background: rgb(101,195,34);
+    background: -moz-linear-gradient(47deg, rgba(101,195,34,1) 0%, rgba(53,159,168,1) 45%, rgba(253,187,45,1) 100%);
+    background: -webkit-linear-gradient(47deg, rgba(101,195,34,1) 0%, rgba(53,159,168,1) 45%, rgba(253,187,45,1) 100%);
+    background: linear-gradient(47deg, rgba(101,195,34,1) 0%, rgba(53,159,168,1) 45%, rgba(253,187,45,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#65c322",endColorstr="#fdbb2d",GradientType=1); 
+    padding: 20px;
+    z-index: 100; 
+}
+#blik_pop {
+    background: rgb(166,0,255);
+    background: -moz-radial-gradient(circle, rgba(166,0,255,1) 0%, rgba(25,60,224,1) 14%, rgba(62,155,136,1) 44%, rgba(255,65,27,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(166,0,255,1) 0%, rgba(25,60,224,1) 14%, rgba(62,155,136,1) 44%, rgba(255,65,27,1) 100%);
+    background: radial-gradient(circle, rgba(166,0,255,1) 0%, rgba(25,60,224,1) 14%, rgba(62,155,136,1) 44%, rgba(255,65,27,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a600ff",endColorstr="#ff411b",GradientType=1); 
+    border-radius: 30px;
+    width: 30%;
+    height: 30%;
+}
+#skanuj_plac_pop {
+    padding: 15px;
+    width: 21.5%;
+    height: 45%;
+    border-radius: 10px;
+}
+
+@keyframes powolny_blur {
+    from {-webkit-filter: blur(0px);}
+    to {-webkit-filter: blur(3px);}
+}
+@keyframes powolne_wejscie {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes powolny_blur_wyjscie {
+    from {-webkit-filter: blur(3px);}
+    to {-webkit-filter: blur(0px);}
+}
+@keyframes powolne_wyjscie {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+.blok {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 100;
+}
+#kod_blik {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 30px;
+}
