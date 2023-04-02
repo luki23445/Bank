@@ -1,0 +1,124 @@
+.pulpit { 
+    padding: 5%; 
+    padding-top: 2%;
+    padding-bottom: 0%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 60% 60%;
+    gap: 5% 5%;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+      "Karta konto"
+      "Wydatki konto2";
+      color: black;
+  }
+  
+  .Karta { 
+       grid-area: Karta;
+      height: 300px;
+      width: 100%;
+      padding: 10px;
+      flex: 2;
+  background-color: #FFFFFF;
+  border-radius: 32px;
+  padding: 32px 32px 0 32px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px 0 rgba(59, 61, 63, 0.541), 0 24px 20px -24px rgba(60, 63, 70, 0.808);
+    width: 100%;
+    }
+.karta_png {
+    width: 100%;
+    aspect-ratio: 66 / 41;
+    background: url(./sgb-karta-mc-debit-zblizeniowa-pogla.png);
+    background-size: 100%;
+    margin-bottom: 6%;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px 0 rgba(66, 66, 66, 0.801), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
+}
+  
+  .Wydatki {
+      grid-area: Wydatki; 
+
+  border-radius: 32px;
+  padding: 32px 32px 0 32px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px 0 rgba(66, 66, 66, 0.801), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
+  
+}
+  
+.konto { grid-area: konto;
+  height: 250px; 
+  width: 100%;
+  padding: 10px;
+  flex: 2;
+  box-shadow: 0 2px 6px 0 rgba(59, 61, 63, 0.541), 0 24px 20px -24px rgba(60, 63, 70, 0.808);
+  border-radius: 32px;
+  padding: 32px 32px 0 32px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.konto a, .konto2 a {
+  font-weight: bold;
+    color: #ea1538;
+}
+.srodki {
+    float: left;
+    padding: 10px;
+    margin-left: 30px;
+    background: none;
+}
+.panel {
+  margin-top: 20px;
+    background: #a7a7a7 ;
+    width: 110%;
+    height: 85px;
+    margin-left: -5%;
+ } 
+.konto2 { grid-area: konto2;
+    height: 250px; 
+    width: 100%;
+    padding: 10px;
+    flex: 2;
+  box-shadow: 0 2px 6px 0 rgba(59, 61, 63, 0.541), 0 24px 20px -24px rgba(60, 63, 70, 0.808);
+  border-radius: 32px;
+  padding: 32px 32px 0 32px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+    
+}
+#karta {
+    width: 400px;
+    margin-top: 35px;
+    aspect-ratio: 16 / 9;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.napis_ukr {
+    display: none;
+    float: left;
+}
+.napis_pok {
+    display: block;
+    float: left;
+}
+select, input {
+    height: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    font-size: 20px;
+}
