@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<html lang="pl-PL">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BANK DON</title>
+
+    <link rel="stylesheet" href="./bank_don.css">
+
+    <link rel="stylesheet" href="./platnosci_pop.css">
+
+    <link rel="stylesheet" href="./pulpit.css">
+
+    <link rel="stylesheet" href="./logowanie.css">
+
+    <script src="https://kit.fontawesome.com/cbd8a1cfd7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="calosc">
+
+        <div id="logowanie" class="logowanie">
+
+
+
+            <div class="menu">
+
+                <div class="Ladowanie_banku" id="Ladowanie_banku">
+                    <h1>DON BANK</h1>
+                </div>
+
+                <nav>
+
+                    <h2 class="logo">bank<span> D<i class="fa-solid fa-o"></i>n </span><sup><i
+                                class="fa-regular fa-copyright"></i><i class="fa-regular fa-registered"></i></sup></h2>
+
+                    <ul>
+
+                        <li><a class="menu_ikon" href="" class="klikniety"><i class="fa-solid fa-house"></i> Dom</a>
+                        </li>
+
+                        <li><a class="menu_ikon" href="">O nas</a></li>
+
+                        <li><a class="menu_ikon" href="">Rejstracja</a></li>
+
+                    </ul>
+
+                    <div>
+
+                        <button id="button" class="fa fa-user"> Logowanie</button>
+
+                    </div>
+
+                </nav>
+
+                <div id="cookie">
+
+
+
+                    <div><i class="fa-solid fa-cookie-bite fa-4x"></i>
+                        <h3>DON BANK S.A. używa plików cookie (tzw. ciasteczek), aby ułatwić Ci korzystanie z naszych
+                            stron i pokazywać dopasowane treści, w tym promocje i inne personalizowane oferty. Pliki
+                            cookie pomagają nam zrozumieć, w jaki sposób korzystasz ze strony i jak możemy ją ulepszyć.
+                        </h3>
+                    </div>
+
+
+
+                    <h5>Klikając przycisk Akceptuję, zgadzasz się na zapisywanie plików cookie, które umożliwią nam
+                        wyświetlanie Ci dopasowanych informacji marketingowych na tym urządzeniu. Jeśli chcesz
+                        zdefiniować własne ustawienia plików cookie oraz sprawdzić pełną treść zgody, kliknij przycisk
+                        Ustawienia.
+
+
+
+                        Szczegółowe informacje o rodzajach, działaniu, łączeniu z innymi danymi, zmianie ustawień lub
+                        usuwaniu plików cookie znajdziesz na stronie Polityka plików cookie.</h5>
+
+                    <button id="accept">Akceptuje</button><button id="ustawienia_cookies">Ustawienia</button>
+
+                </div>
+
+            </div>
+
+            <form name="form1">
+
+                <div id="blur"></div>
+
+                <div id="okno">
+
+                    <div class="zawartosc">
+
+                        <div class="lewa">
+
+                            <div class="kludka" id="lock"><i class="fa-solid fa-lock fa-10x"></i></div>
+
+                            <div class="kludka" id="unlock"><i class="fa-solid fa-lock-open fa-10x"></i></div>
+
+                        </div>
+
+                        <div class="prawa">
+
+                            <span id="zamykanie">X</span>
+
+                            <h1>Logowanie</h1>
+
+                            <input type="email" placeholder="E-Mail" id="login" maxlength="15">
+
+                            <input type="password" placeholder="Hasło" id="haslo" maxlength="10">
+
+                            <button id="loguj">Zaloguj się</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div id="strona" class="strona">
+
+            <nav>
+
+                <h2 class="logo1">bank<span> D<i class="fa-solid fa-o"></i>n </span><sup><i
+                            class="fa-regular fa-copyright"></i><i class="fa-regular fa-registered"></i></sup></h2>
+
+                <ul>
+
+                    <li class="hover"><a class="pulpit_pop_open" class="klikniety"><i class="fa-solid fa-house"></i>
+                            Pulpit</a></li>
+
+                    <li class="hover"><a class="platnosci_pop_open"><i class="fa-solid fa-landmark"></i> Płatności</a>
+                    </li>
+
+                    <li class="hover"><a class="finanse_pop_open"><i class="fa-solid fa-coins"></i> Finanse</a></li>
+
+                    <li class="hover"><a class="pomoc_pop_open"><i class="fa-solid fa-hand-holding-medical"></i>
+                            Pomoc</a></li>
+
+                </ul>
+
+                <a href="logowanie.html"><button id="button" class="fa fa-user"> Wyloguj</button></a>
+
+
+
+
+
+            </nav>
+
+            <!-- Pulpit modal -->
+
+            <div class="pulpit_pop" id="pulpit_pop">
+
+                <div class="pulpit">
+
+                    <div class="Karta">
+
+                        <div class="karta_png"></div>
+
+                    </div>
+
+                    <div class="Wydatki">
+
+                        <div class="pole_transakcii" style="margin-bottom: 10px ;"></div>
+
+                        <a id="data_logowania"></a>
+
+                    </div>
+
+                    <div class="konto">
+
+                        <a style="color: red; margin-bottom: 15px;">Produkty</a>
+
+                        <div class="konta">
+
+
+
+                            <h3 style="margin-bottom: 20px; margin-left: 40px;">KONTO JAKIE CHCĘ</h3>
+
+                            <h3><i>1050 1836 4784 9275 3802 5036</i></h3>
+
+                            <div class="panel">
+
+                                <div class="srodki">
+
+                                    <h4>DOSTĘPNE ŚRODKI</h4><br>
+
+                                    <h1 id="dostepne_srodki_ou"><label id="wynik"></label></h1>
+
+                                    <label id="wynik"></label>
+
+                                </div>
+
+                                <div class="srodki">
+
+                                    <h4>SALOD</h3><br>
+
+                                        <h3 id="sald"></h3>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="konto2">
+
+                        <a style="color: red; margin-bottom: 15px;">Produkty</a>
+
+                        <div class="konta">
+
+                            <h3 style="margin-bottom: 20px; margin-left: 40px;">KONTO JAKIE CHCĘ</h3>
+
+                            <h3><i>1050 1836 4784 9275 3802 5036</i></h3>
+
+                            <div class="panel">
+
+                                <div class="srodki">
+
+                                    <h4>DOSTĘPNE ŚRODKI</h4><br>
+
+                                    <h1>99 999 PLN</h1>
+
+                                </div>
+
+                                <div class="srodki">
+
+                                    <h4>SALOD</h3><br>
+
+                                        <h3>99 999 PLN</h3>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Platnosci Modal -->
+
+            <div class="platnosci_pop" id="platnosci_pop">
+
+                <div class="platnosci">
+
+
+
+                    <div class="Lewa">
+
+                        <h2 class="description">Przelew</h2>
+
+
+
+                        <div class="na_obcy na_obcy_pop_open" id="kafelek">
+
+                            <i class="fa-solid fa-money-bill-transfer fa-2x"></i>
+
+                            <div class="text">
+
+                                <h4>Na rachunek</h4>
+
+                                <br>
+
+                                <h2 style="margin-top:-15px; color: red;">
+
+                                    <b>OBCY</b>
+
+                                </h2>
+
+                            </div>
+
+                            <a>
+
+                                <i class="fa-solid fa-caret-right fa-3x"></i>
+
+                            </a>
+
+                        </div>
+
+
+
+                        <div class="na_wlasny na_wlasny_pop_open" id="kafelek">
+
+                            <i class="fa-solid fa-sack-dollar fa-2x"></i>
+
+                            <div class="text">
+
+                                <h4 style="margin-top: 20px;">Na rachunek własny</h4>
+
+                            </div>
+
+                            <a>
+
+                                <i class="fa-solid fa-caret-right fa-3x"></i>
+
+                            </a>
+
+                        </div>
+
+                        <div class="z_innego_banku z_innego_banku_pop_open" id="kafelek">
+
+                            <i class="fa-solid fa-landmark fa-2x"></i>
+
+                            <div class="text">
+
+                                <h4 style="margin-top: 20px;">Z rachunku w innym banku</h4>
+
+                            </div>
+
+                            <a>
+
+                                <i class="fa-solid fa-caret-right fa-3x"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="Prawa">
+
+                        <div class="blik blik_pop_open" id="kafelek">
+
+                            <i class="fa-solid fa-mobile-screen-button fa-2x"></i>
+
+                            <div class="text">
+
+                                <h4>Na telefon</h4>
+
+                                <br>
+
+                                <h2 style="margin-top:-15px; color: red;">
+
+                                    <b>BLIK</b>
+
+                                </h2>
+
+                            </div>
+
+                            <a>
+
+                                <i class="fa-solid fa-caret-right fa-3x"></i>
+
+                            </a>
+
+                        </div>
+
+                        <div class="na_wlasny_walutowy na_wlasny_walutowy_pop_open" id="kafelek">
+
+                            <i class="fa-solid fa-dollar-sign fa-2x"></i>
+
+                            <div class="text">
+
+                                <h4 style="margin-top: 20px;">Na rachunek własny walutowy</h4>
+
+                            </div>
+
+                            <a>
+
+                                <i class="fa-solid fa-caret-right fa-3x">
+
+                                </i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="prawa1">
+
+                        <h2 class="description">Pozostałe</h2>
+
+                        <div class="skanuj_plac skanuj_plac_pop_open" id="kafelek">
+
+                            <i class="fa-solid fa-barcode fa-2x"></i>
+
+                            <div class="text">
+
+                                <h4 style="margin-top: 20px;">Skanuj i płać</h4>
+
+                            </div>
+
+                            <a>
+
+                                <i class="fa-solid fa-caret-right fa-3x"></i>
+
+                            </a>
+
+                        </div>
+
+
+                        <div class="doladuj_telefon doladuj_telefon_pop_open" id="kafelek">
+
+                            <i class="fa-solid fa-money-bill-transfer fa-2x"></i>
+
+                            <div class="text">
+
+                                <h4 style="margin-top: 20px;">Doładuj telefon</h4>
+
+                            </div>
+
+                            <a>
+
+                                <i class="fa-solid fa-caret-right fa-3x"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="lewa1">
+
+                        <h2 class="description">Historia Płatności</h2>
+
+
+
+                        <div class="transakcje_blik transakcje_blik_pop_open" id="kafelek">
+
+                            <i class="fa-solid fa-clock-rotate-left fa-2x"></i>
+
+                            <div class="text">
+
+                                <h4 style="margin-top: 20px;">Transakcje BLIK</h4>
+
+                            </div>
+
+                            <a>
+
+                                <i class="fa-solid fa-caret-right fa-3x"></i>
+
+                            </a>
+
+                        </div>
+
+                        <div class="przelewy przelewy_pop_open" id="kafelek">
+
+                            <i class="fa-solid fa-clock-rotate-left fa-2x"></i>
+
+                            <div class="text">
+
+                                <h4 style="margin-top: 20px;">Przelewy</h4>
+
+                            </div>
+
+                            <a>
+
+                                <i class="fa-solid fa-caret-right fa-3x"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Finanse Modal -->
+
+            <div class="finanse_pop" id="finanse_pop">
+
+                <div style="margin-top: 40px;" class="text"></div>
+
+                <h3 style="padding: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vulputate lacinia
+                    efficitur. Vivamus tristique at nulla eget ullamcorper. Aliquam at placerat nisi, quis luctus quam.
+                    Curabitur in massa erat. Praesent in velit non odio sollicitudin fringilla non eu massa.
+                    Pellentesque in sollicitudin neque. Cras non finibus purus. Phasellus dapibus ut quam non
+                    vestibulum. Mauris ac fringilla mauris. Quisque tempor nunc ac diam ultricies accumsan. Sed euismod
+                    lacinia est, eget aliquam nunc fermentum vel. Morbi hendrerit efficitur diam, vel cursus ex
+                    pellentesque quis. Praesent rutrum arcu elit, at blandit orci consequat et. Sed et lorem quis orci
+                    lacinia tristique eu vitae libero. Vivamus porttitor nisl interdum, consequat nisi vel, auctor
+                    neque. Phasellus mollis tortor et erat consequat imperdiet. Praesent lectus dolor, accumsan eu
+                    congue ac, hendrerit nec nibh. Ut ac odio in mauris laoreet facilisis. Nullam quam magna, laoreet
+                    sit amet tempus sed, dapibus vel est. Maecenas malesuada tortor consequat leo faucibus, at porta
+                    nisi pharetra. Proin ex arcu, vulputate vitae tempor aliquet, lobortis ac sapien. Nam malesuada
+                    purus nec viverra vulputate. Donec rhoncus urna in urna rutrum, ut dignissim nisl rutrum. Duis sed
+                    malesuada mauris. Fusce interdum enim enim, vel viverra ex iaculis id. Morbi laoreet sem sed eros
+                    facilisis sodales. Nam justo ipsum, vulputate sollicitudin velit ac, porta egestas ante. Vivamus
+                    egestas, magna et venenatis laoreet, lacus metus viverra lectus, semper bibendum lorem mi eu nulla.
+                    Fusce pellentesque dolor blandit, tristique justo at, tempus erat. Nam vitae ex in urna condimentum
+                    interdum non et ipsum. Etiam quis dignissim urna. Nam laoreet facilisis ex at tempor. Curabitur
+                    justo lacus, faucibus et neque vel, convallis commodo risus. Nunc et ultricies purus. Sed libero
+                    ante, gravida in nibh cursus, imperdiet sodales sem. Nunc aliquam justo vitae dui lobortis, in
+                    vulputate tortor vehicula. Suspendisse potenti. Integer risus metus, tempus eget convallis eu,
+                    euismod eu magna. Sed sagittis nibh sed consequat suscipit. Fusce nec fringilla ex, sit amet lacinia
+                    risus. In hac habitasse platea dictumst. Nam rutrum arcu dui, vel suscipit turpis mollis et. Sed
+                    lobortis, neque vulputate mattis congue, elit justo volutpat libero, non elementum justo ligula quis
+                    nulla. Nulla efficitur sollicitudin purus, id fringilla eros auctor a. Suspendisse id dui vel felis
+                    cursus euismod quis ullamcorper sapien. Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos. Mauris tristique consectetur efficitur. In laoreet, libero eu
+                    fermentum eleifend, lectus orci consequat nulla, ac posuere odio justo ut ante. Praesent quis
+                    volutpat urna, id tempor urna. Pellentesque sed euismod ligula, sit amet condimentum leo. Nulla in
+                    ultrices nisi, vel lobortis elit. Suspendisse a justo molestie, interdum erat eget, mattis purus.
+                    Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut imperdiet
+                    massa ac nibh hendrerit pretium. Vivamus vehicula erat nulla, dictum convallis lacus laoreet id.
+                    Maecenas sit amet dictum erat. Mauris sodales suscipit nibh a tempor. In aliquam mollis laoreet.
+                    Donec sed dolor magna. Maecenas mattis suscipit lectus, ut condimentum elit hendrerit a. Praesent
+                    vehicula congue libero, non suscipit felis malesuada vitae. Donec feugiat justo vitae ullamcorper
+                    sagittis.
+
+                </h3>
+
+            </div>
+
+            <!-- Pomoc modal -->
+
+            <div class="pomoc_pop" id="pomoc_pop">
+
+            </div>
+
+        </div>
+
+        <div id="blok" class="blok"></div>
+
+        <div id="na_obcy_pop">
+
+            <h1>Utwórz przelew na rachunek obcy</h1>
+
+            <h3>Z rachunku:</h3>
+
+            <select>
+
+                <option>
+                    <h2>konto Osobiste</h2>
+                </option>
+
+            </select>
+
+            <h2>Nazwa odbiorcy</h2>
+
+            <input>
+
+            <h2>Tytuł przelewu</h2>
+
+            <input>
+
+            <h2>Kwota Przelewu</h2>
+
+            <input type="text" id="wyplata" placeholder="Podaj Kwotę Przelewu" maxlength="6"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
+
+            <br>
+
+            <button style="margin-left: 120px; margin-top: 20px;" id="zaakceptuj_wyplate">Wykonaj Przelew</button>
+
+        </div>
+
+        <div id="na_wlasny_pop">
+
+            <h1>Utwórz przelew na rachunek własny</h1>
+
+            <h3>Z rachunku:</h3>
+
+            <select>
+
+                <option>
+                    <h2>konto Osobiste</h2>
+                </option>
+
+            </select>
+
+            <h2>Tytuł przelewu</h2>
+
+            <input>
+
+            <h2>Kwota Przelewu</h2>
+
+            <input type="text" id="wplata" placeholder="Podaj Kwotę Przelewu" maxlength="6"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '');" required>
+
+            <br>
+
+            <button style="margin-left: 120px; margin-top: 20px;" id="zaakceptuj_wplate">Wykonaj Przelew</button>
+
+        </div>
+
+        <div id="z_innego_banku_pop">z_innego_banku_pop</div>
+
+        <div id="blik_pop">
+
+            <h1 id="kod_blik"></h1>
+
+        </div>
+
+        <div id="na_wlasny_walutowy_pop">na_wlasny_walutowy_pop</div>
+
+        <div id="skanuj_plac_pop"><img src="kod.png" alt="" srcset=""></div>
+
+        <div id="doladuj_telefon_pop">doladuj_telefon_pop</div>
+
+        <div id="transakcje_blik_pop">transakcje_blik_pop</div>
+
+        <div id="przelewy_pop">przelewy_pop</div>
+
+        <script src="./platnosci_pop.js"></script>
+
+        <script src="./bank_don.js"></script>
+
+        <script src="./pulpit.js"></script>
+
+        <script src="./logowanie.js"></script>
+
+</body>
+
+</html>
