@@ -3,6 +3,8 @@
 ### Login: A
 ### Hasło: A
 
+#### [Link do strony: ](https://luki23445.github.io/Bank/index.html)
+
 ## Strona stworzona za pomocą HTML, CSS oraz JavaScript.
 ## Logowanie zostalo zrobione za pomocą js.
 ## Na stronie działa wykonywanie przelewów w dwie strony na swoje konto i na inne konto (dodawanie i odejmowanie pieniędzy), kod blik (randomowo generowane liczby).
