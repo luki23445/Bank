@@ -27,8 +27,8 @@ button.onclick = function() {
 };
 document.getElementById("loguj").addEventListener("click", loguj);
 
-var mail = new Array("Łukasz@o2.pl", "A");
-var haslo = new Array("Wojtania", "A");
+var mail = new Array("A");
+var haslo = new Array("A");
 
 function sprawdz_haslo(mailin, hasin)
 {  
