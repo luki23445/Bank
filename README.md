@@ -12,10 +12,10 @@
 
 ## Przykładowe zdjęcia
 
-! [Strona logowania] (./strona logowania.png)
+![Strona logowania](./strona logowania.png)
 
-! [Pulpit] (./pulpit.png)
+![Pulpit](./pulpit.png)
 
-! [Płatności] (./platnosci.png)
+![Płatności](./platnosci.png)
 
-! [Historia przelewów] (./historia.png)
+![Historia przelewów](./historia.png)
